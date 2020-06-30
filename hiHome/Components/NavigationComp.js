@@ -5,20 +5,13 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { DataContext } from "./DataContext";
 import Home from "./Home";
+import Data from "./Data";
 import CustomSpinner from "./CustomSpinner";
-
-function Data() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Data</Text>
-    </View>
-  );
-}
 
 function SettingsScreen() {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Settings</Text>
+      <Text>New Features Coming Soon!</Text>
     </View>
   );
 }

@@ -28,7 +28,7 @@ export default function HomeContent(props) {
   let apiData = useContext(DataContext);
   if (props.data.outdoor.main) {
     apiData = props.data;
-    console.log("REFRESHED + ", apiData.outdoor);
+    //console.log("REFRESHED + ", apiData.outdoor);
   }
   //console.log(props.data.outdoor);
 

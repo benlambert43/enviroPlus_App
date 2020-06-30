@@ -20,7 +20,7 @@ const HomeCardMap = (props) => {
     {
       key: 2,
       text: `Indoor Conditions\n\nThe current indoor temperature is ${parseInt(
-        (props.indoor[props.indoor.length - 1].currentAdjustedTemp * 9) / 5 + 32
+        (props.indoor[props.indoor.length - 1].currentRawTemp * 9) / 5 + 12
       )}°F.\nThe indoor humidity is ${parseInt(
         props.indoor[props.indoor.length - 1].currentHumidity
       )}%, and the indoor pressure is ${parseInt(
