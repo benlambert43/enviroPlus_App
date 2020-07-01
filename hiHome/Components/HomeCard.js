@@ -9,7 +9,7 @@ const HomeCard = (props) => {
       style={{
         flexDirection: "row",
         height: 100,
-        minHeight: 200,
+        minHeight: 300,
         padding: 10,
         marginTop: 30,
         marginBottom: 10,
