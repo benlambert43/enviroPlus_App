@@ -9,6 +9,8 @@ import CurrentPressureChart from "./Charts/CurrentPressureChart";
 import PressureChart from "./Charts/PressureChart";
 import CurrentTempChart from "./Charts/CurrentTemp";
 import TempChart from "./Charts/TempChart";
+import CurrentLightChart from "./Charts/CurrentLight";
+import LightChart from "./Charts/LightChart";
 
 const styles = StyleSheet.create({
   container: {
@@ -37,7 +39,7 @@ const Charting = (props) => {
               color: `rgba(0, 88 , 190, 1)`,
             }}
           >
-            Humidity{"\n"}
+            Humidity{"\n"}(%){"\n"}
           </Text>
           <CurrentHumidityChart data={props.data} />
           <HumidityChart data={props.data} />
@@ -82,10 +84,25 @@ const Charting = (props) => {
               color: `rgba(190,102,0, 1)`,
             }}
           >
-            Temperature{"\n"}(°F){"\n\n"}Temperature above 72°F{"\n"}
+            Temperature{"\n"}(°F){"\n\n"}Temperature above 72°F:{"\n"}
           </Text>
           <CurrentTempChart data={props.data} />
           <TempChart data={props.data} />
+        </View>
+        <View style={{ padding: 30 }}>
+          <Text
+            style={{
+              fontSize: 18,
+              fontFamily: "System",
+              textAlign: "center",
+              fontWeight: "bold",
+              color: `rgba(255,201,0,1)`,
+            }}
+          >
+            Light {"\n"}(Lux, Relative) {"\n"}
+          </Text>
+          <CurrentLightChart data={props.data} />
+          <LightChart data={props.data} />
         </View>
       </View>
     </View>

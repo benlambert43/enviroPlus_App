@@ -36,19 +36,19 @@ const HomeCardMap = (props) => {
             Number.EPSILON) *
             100
         ) / 10000
-      }ppm, oxidising (NO2) gas reading is ${
+      } ppm, oxidising (NO2) gas reading is ${
         Math.round(
           (parseFloat(props.indoor[props.indoor.length - 1].currentno2) +
             Number.EPSILON) *
             100
         ) / 10000
-      }ppb, and the NH3 gas reading is ${
+      } ppb, and the NH3 gas reading is ${
         Math.round(
           (parseFloat(props.indoor[props.indoor.length - 1].currentnh3) +
             Number.EPSILON) *
             100
         ) / 10000
-      }ppm`,
+      } ppm`,
       icon: "ios-cloudy",
     },
     {
